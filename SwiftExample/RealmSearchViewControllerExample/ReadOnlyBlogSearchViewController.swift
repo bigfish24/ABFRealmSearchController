@@ -30,6 +30,10 @@ class ReadOnlyBlogSearchViewController: RealmSearchViewController {
         super.viewDidLoad()
         self.title = "Read Only Blogs"
         
+        // Set these two values if you not set these values in storyboard.
+        // self.entityName = "BlogObject"
+        // self.searchPropertyKeyPath = "title"
+        
         var readOnlyConfig = Realm.Configuration.defaultConfiguration
         readOnlyConfig.fileURL = readOnlyConfig.fileURL!.deletingLastPathComponent()
             .appendingPathComponent("readonly.realm")

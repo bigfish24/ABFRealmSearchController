@@ -22,6 +22,11 @@ class BlogSearchViewController: RealmSearchViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set these two values if you not set these values in storyboard.
+        // self.entityName = "BlogObject"
+        // self.searchPropertyKeyPath = "title"
+
+        
         self.tableView.estimatedRowHeight = 88
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
